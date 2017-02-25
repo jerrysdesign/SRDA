@@ -16,14 +16,18 @@ head
 
   script(src="/scripts/plugins/modernizr.js")
 
-body
+body.sidebar-mini.fixed
 
-  include ../modules/_header
+  main.wrapper
 
-  main
-    block content
+    // Navbar
+    include ../modules/_navbar.pug
 
-  include ../modules/_footer
+    // Side-Nav
+    include ../modules/_sidebar.pug
+
+    .content-wrapper
+      block content
 
   script(src="/scripts/main.js")
 

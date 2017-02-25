@@ -1,0 +1,22 @@
+header.main-header.hidden-print
+  a.logo(href='index.html')
+    | SRDA
+
+  nav.navbar.navbar-static-top
+    // Sidebar toggle button
+    a.sidebar-toggle(href='#', data-toggle='offcanvas')
+
+    // Navbar Right Menu
+    .navbar-custom-menu
+      ul.top-nav
+
+        //Help Menu
+        li.dropdown.notification-menu
+          a.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false')
+            i.fa.fa-question-circle.fa-lg
+
+        // User Menu
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            i.fa.fa-user.fa-lg
+

@@ -1,3 +1,23 @@
 $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 
 @import "bootstrap-sass/assets/stylesheets/_bootstrap"; //~3.3.7
+
+// 1 - TOOLS
+@import '1-tools/fonts';
+@import '1-tools/vars';
+@import '1-tools/font-awesome';
+@import '1-tools/animate';
+
+// 2 - BASICS
+@import '2-basics/skin';
+@import '2-basics/layout';
+@import '2-basics/structure';
+@import '2-basics/helpers';
+
+// 3 - Componant
+@import '3-componant/top-navbar';
+@import '3-componant/sidebar';
+@import '3-componant/sidebar-mini';
+@import '3-componant/page-title';
+
+
