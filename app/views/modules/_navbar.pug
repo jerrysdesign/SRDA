@@ -6,17 +6,29 @@ header.main-header.hidden-print
     // Sidebar toggle button
     a.sidebar-toggle(href='#', data-toggle='offcanvas')
 
+    // Navbar Left Menu
+    .navbar-custom-menu.pull-left
+      ul.top-nav
+
+        li: a(href='#') 資料查詢
+        li: a(href='#') 操作說明
+        li: a(href='#') 相關資源
+        li: a(href='my-data') MyData
+
     // Navbar Right Menu
-    .navbar-custom-menu
+    .navbar-custom-menu.pull-right
       ul.top-nav
 
         //Help Menu
         li.dropdown.notification-menu
           a.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false')
             i.fa.fa-question-circle.fa-lg
+            span Help
+            b.caret
 
         // User Menu
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
             i.fa.fa-user.fa-lg
+
 

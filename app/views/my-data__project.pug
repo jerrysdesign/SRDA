@@ -1,0 +1,72 @@
+extends layouts/_default
+
+block content
+  .page-title
+    div
+      h1
+        i.fa.fa-dashboard
+        |  Dashboard
+
+    div
+      ul.breadcrumb
+        li
+          i.fa.fa-home.fa-lg
+        li
+          a(href='#') Dashboard
+
+  .row
+    .col-md-12
+      | 選擇下載變項
+  .row
+    .col-md-7
+      ul.list-group
+        - for(var i = 0; i < 5; i++)
+          li.list-group-item
+            label
+              input(type='checkbox')
+              |
+              | Check-item #{i}
+      .pull-right
+        a.btn.btn-primary(href='#') 下一步
+
+    .col-md-5
+      a.btn.btn-default(href='#')
+        i.fa.fa-pencil
+        |
+        | 選擇全部
+      br
+      a.btn.btn-default(href='#')
+        i.fa.fa-pencil
+        |
+        | 重新選擇
+      br
+      a.btn.btn-danger(href='#')
+        i.fa.fa-times-circle
+        |
+        | 全部清除
+  .row
+    .col-md-12
+      | 選擇下載檔案
+  .row
+    .col-md-12
+      table.table.table-bordered
+        tr
+          th 過錄編碼簿
+          td ...
+        tr
+          th 資料庫
+          td ...
+        tr
+          th 原始資料
+          td ...
+        tr
+          th 欄位定義程式
+          td ...
+        tr
+          th 該年資加權說明
+          td ...
+      .pull-right
+        a.btn.btn-default(href='#')
+          | 重新選擇變項
+        a.btn.btn-primary(href='#')
+          | 下載

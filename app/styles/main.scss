@@ -20,4 +20,12 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import '3-componant/sidebar-mini';
 @import '3-componant/page-title';
 
-
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    outline: none !important;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+}
