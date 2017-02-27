@@ -1,10 +1,12 @@
-$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-
-@import "bootstrap-sass/assets/stylesheets/_bootstrap"; //~3.3.7
+// $icon-font-path: 'bootstrap-sass/assets/fonts/bootstrap/'
+// $bootstrapPath:  'bootstrap-sass/assets/stylesheets/bootstrap/'
 
 // 1 - TOOLS
 @import '1-tools/fonts';
 @import '1-tools/vars';
+// @import "bootstrap-sass/assets/stylesheets/_bootstrap" //~3.3.7
+// @import '1-tools/bootstrap'
+@import '1-tools/bootstrap-source/bootstrap';
 @import '1-tools/font-awesome';
 @import '1-tools/animate';
 
