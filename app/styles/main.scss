@@ -24,12 +24,5 @@
 @import '3-componant/heading';
 @import '3-componant/card';
 
-a {
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    outline: none !important;
-    transition: all 0.3s ease;
-    text-decoration: none;
-  }
-}
+// 3 - Componant
+@import '4-pages/search';

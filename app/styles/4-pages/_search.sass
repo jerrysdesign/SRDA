@@ -1,0 +1,25 @@
+// Page: Mailbox
+
+.search
+  &-controls
+    margin-bottom: 10px
+    border-bottom: 1px solid #ddd
+    padding: 0 0 10px 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .animated-checkbox
+      .label-text:before
+        vertical-align: -7px !important
+
+  &-messages
+    table
+      tr
+        td
+          border: 0 !important
+          padding: 5px !important
+  &-subject
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    max-width: 500px
