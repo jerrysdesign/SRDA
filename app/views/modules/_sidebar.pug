@@ -33,14 +33,18 @@ aside.main-sidebar.hidden-print
           span 專案管理
           i.fa.fa-angle-right
 div(id='newProjectName',class='modal fade', abindex="-1")
-  .modal-dialog(role="document")
+  .modal-dialog.modal-sm(role="document")
     .modal-content
       .modal-header
         button(type="button" class="close" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") &times;
-        h4(class="modal-title" id="myModalLabel") Modal title
+        h4(class="modal-title" id="myModalLabel") 建立專案名稱
       .modal-body
-        | ...
+        form.form-horizontal
+          .form-group
+            label.control-label.col-md-3 名稱：
+            .col-md-8
+              input(class='form-control', type='text', placeholder='輸入名稱')
       .modal-footer
-        button(type="button" class="btn btn-default" data-dismiss="modal") Close
-        button(type="button" class="btn btn-primary") Save changes
+        button(type="button" class="btn btn-default" data-dismiss="modal") 取消
+        button(type="button" class="btn btn-primary") 確定
