@@ -15,34 +15,35 @@ block content
           a(href='#') MyData
 
   .row
-    .col-md-12
-      | 專案名稱：
-      |
-      span 專案名稱
-      .pull-right
-        | 最後編輯時間：
-        |
-        span yyyy/mm/dd PM HH:MM
-
-  .bs-component
-    ul.list-group
-      li.list-group-item
-        .row
-          .col-md-7
-            | 變項數：
-            span #
-          .col-md-5
-            a.pull-right(href='#')
-              i.fa.fa-pencil
-              |
-              | 編輯專案名稱
-      li.list-group-item
-        .row
-          .col-md-7
-            | 下載次數：
-            span #
-          .col-md-5
-            a.pull-right(href='#')
-              i.fa.fa-pencil
-              |
-              | 編輯變項清單
+    -for (var i = 1; i < 3; i++)
+      // list Item #{i}
+      .col-md-12.mb-20
+        .heading-title
+          | 專案名稱：
+          |
+          span 專案名稱
+          .pull-right
+            | 最後編輯時間：
+            |
+            span yyyy/mm/dd PM HH:MM
+        ul.list-group
+          li.list-group-item
+            .row
+              .col-md-7
+                | 變項數：
+                span #{i}
+              .col-md-5
+                a.pull-right(href='#')
+                  i.fa.fa-pencil
+                  |
+                  | 編輯專案名稱
+          li.list-group-item
+            .row
+              .col-md-7
+                | 下載次數：
+                span #{i}
+              .col-md-5
+                a.pull-right(href='#')
+                  i.fa.fa-pencil
+                  |
+                  | 編輯變項清單
