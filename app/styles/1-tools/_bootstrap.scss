@@ -1,54 +1,54 @@
-// $bootstrapPath: '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/';
-// $icon-font-path: '../../../node_modules/bootstrap-sass/assets/fonts/bootstrap';
+// $bootstrapPath: '../../../node_modules/bootstrap-source/bootstrap/';
+// $icon-font-path: '../../../node_modules/bootstrap-sourcetrap';
 
 /*!
  * Bootstrap v3.3.6
  */
 
 // Core variables and mixins
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import 'bootstrap-source/bootstrap/variables.bg';
 @import 'vars';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import 'bootstrap-source/bootstrap/mixins';
 
 // Reset and dependencies
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/normalize';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/print';
+@import 'bootstrap-source/bootstrap/normalize';
+@import 'bootstrap-source/bootstrap/print';
 
 // Core CSS
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/type';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/code';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/grid';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/tables';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/forms';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+@import 'bootstrap-source/bootstrap/scaffolding';
+@import 'bootstrap-source/bootstrap/type';
+@import 'bootstrap-source/bootstrap/code';
+@import 'bootstrap-source/bootstrap/grid';
+@import 'bootstrap-source/bootstrap/tables';
+@import 'bootstrap-source/bootstrap/forms';
+@import 'bootstrap-source/bootstrap/buttons';
 
 // Components
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/component-animations';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/dropdowns';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/button-groups';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/input-groups';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/navs';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/navbar';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/pagination';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/pager';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/labels';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/badges';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/alerts';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/progress-bars';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/media';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/list-group';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/panels';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/close';
+@import 'bootstrap-source/bootstrap/component-animations';
+@import 'bootstrap-source/bootstrap/dropdowns';
+@import 'bootstrap-source/bootstrap/button-groups';
+@import 'bootstrap-source/bootstrap/input-groups';
+@import 'bootstrap-source/bootstrap/navs';
+@import 'bootstrap-source/bootstrap/navbar';
+@import 'bootstrap-source/bootstrap/breadcrumbs';
+@import 'bootstrap-source/bootstrap/pagination';
+@import 'bootstrap-source/bootstrap/pager';
+@import 'bootstrap-source/bootstrap/labels';
+@import 'bootstrap-source/bootstrap/badges';
+@import 'bootstrap-source/bootstrap/alerts';
+@import 'bootstrap-source/bootstrap/progress-bars';
+@import 'bootstrap-source/bootstrap/media';
+@import 'bootstrap-source/bootstrap/list-group';
+@import 'bootstrap-source/bootstrap/panels';
+@import 'bootstrap-source/bootstrap/responsive-embed';
+@import 'bootstrap-source/bootstrap/close';
 
 // Components w/ JavaScript
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/modals';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/tooltip';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/popovers';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/carousel';
+@import 'bootstrap-source/bootstrap/modals';
+@import 'bootstrap-source/bootstrap/tooltip';
+@import 'bootstrap-source/bootstrap/popovers';
+@import 'bootstrap-source/bootstrap/carousel';
 
 // Utility classes
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/utilities';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+@import 'bootstrap-source/bootstrap/utilities';
+@import 'bootstrap-source/bootstrap/responsive-utilities';

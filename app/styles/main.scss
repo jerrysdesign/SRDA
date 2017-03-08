@@ -3,10 +3,10 @@
 
 // 1 - TOOLS
 @import '1-tools/fonts';
-@import '1-tools/vars';
-// @import "bootstrap-sass/assets/stylesheets/_bootstrap" //~3.3.7
-// @import '1-tools/bootstrap'
-@import '1-tools/bootstrap-source/bootstrap';
+@import '1-tools/variables';
+@import "bootstrap-sass/assets/stylesheets/_bootstrap"; //~3.3.7
+@import '1-tools/theme';
+/*font-awesome*/
 @import '1-tools/font-awesome';
 @import '1-tools/animate';
 
@@ -23,6 +23,7 @@
 @import '3-componant/page-title';
 @import '3-componant/heading';
 @import '3-componant/card';
+@import '3-componant/list';
 
 // 3 - Componant
 @import '4-pages/search';

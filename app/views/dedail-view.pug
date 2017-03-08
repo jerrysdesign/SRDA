@@ -1,0 +1,88 @@
+extends layouts/_search
+
+block content
+  .page-title.hidden-print
+    div
+      h1
+        i.fa.fa-file-text-o
+        |  詳情
+      p 變項資訊詳細資訊
+
+    div
+      ul.breadcrumb
+        li
+          i.fa.fa-home.fa-lg
+        li
+          a(href='#') 變項資訊
+
+  .row
+    .col-md-12
+      .card
+        section.dedaile
+          .row.dedaile-info.list-side-by-side
+            .col-xs-9
+              dl
+                dt 變項名稱：
+                dd 變項名稱假文字
+                dt 變項說明：
+                dd 變項說明假文字
+                dt 叢集：
+                dd 叢集假文字
+                dt 問卷組別：
+                dd 問卷組別假文字、問卷組別假文字、問卷組別假文字、問卷組別假文字
+                dt 題型：
+                dd 題組
+                dt 主題：
+                dd
+                  a(href='#') 主題
+                  |、
+                  a(href='#') 主題
+                  |、
+                  a(href='#') 主題
+                dt 資料年度(西元)
+                dd ...
+            .col-xs-3
+              h3 相關變項：
+              ul
+                -for (var i = 1; i < 5; i++)
+                  li
+                    a(href='#') 變項 #{i}
+
+
+          .row
+            .col-xs-12.table-responsive
+              table.table.table-striped
+                thead
+                  tr
+                    th Value
+                    th Label
+                    th Frequency
+                    th Description
+                tbody
+                  -for (var i = 1; i < 5; i++)
+                    tr
+                      td #{i}
+                      td #{i}
+                      td #{i}
+                      td #{i}
+
+              table.table.table-striped
+                thead
+                  tr
+                    th Value
+                    th Invalid
+                    th Min
+                    th Max
+                    th Mean
+                tbody
+                  -for (var i = 1; i < 5; i++)
+                    tr
+                      td #{i}
+                      td #{i}
+                      td #{i}
+                      td #{i}
+                      td #{i}
+
+//- block specific-js
+//-   script(type="text/javascript").
+//-     $('body').removeClass("sidebar-mini").addClass("sidebar-collapse");

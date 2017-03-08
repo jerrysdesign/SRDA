@@ -1,0 +1,44 @@
+aside.main-sidebar.hidden-print
+
+  section.sidebar
+
+    .search-title
+      i.fa.fa-search
+      | &nbsp;關鍵字&nbsp;
+      i.fa.fa-question-circle
+      input(type='text', class='form-control')
+
+    form.form-horizontal(style="padding: 10px")
+      .card
+        .card-title 計畫叢集
+        .card-body
+        .card-footer
+      .card
+        .card-title 依「西元」：
+        .card-body
+        .card-footer
+          button(type="button" class="btn btn-default") 個別年度篩選
+      .card
+        .card-title 類型
+        .card-body
+          .row
+            .col-xs-6.checkbox
+              label
+                input(type="checkbox" id="inlineCheckbox1" value="option1")
+                | 單選
+              label
+                input(type="checkbox" id="inlineCheckbox1" value="option1")
+                | 複選
+            .col-xs-6.checkbox
+              label
+                input(type="checkbox" id="inlineCheckbox1" value="option1")
+                | 題組
+              label
+                input(type="checkbox" id="inlineCheckbox1" value="option1")
+                | 文字題
+
+
+    button(type="button" class="btn btn-default") 清除全部
+    button(type="button" class="btn btn-primary") 查詢
+
+

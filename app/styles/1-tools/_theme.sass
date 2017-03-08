@@ -1,0 +1,188 @@
+
+// TABLE
+.table-bordered
+  border: 1px solid $table-border-color
+  > thead,
+  > tbody,
+  > tfoot
+    > tr
+      > th,
+      > td
+        border: 1px solid $table-border-color
+  > thead > tr
+    > th,
+    > td
+      border-bottom-width: 0
+
+// Scaffolding
+a
+  color: $link-color
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    color: $link-hover-color
+    outline: none !important
+    transition: all 0.3s ease
+    text-decoration: $link-hover-decoration
+
+  &:active
+    outline: none !important
+
+// Popovers
+.popover
+  @include box-shadow(0 5px 10px rgba(0,0,0,.2))
+
+// Navs
+.nav-tabs
+  > li
+    // Actual tabs (as links)
+    > a
+      border-bottom: 2px solid transparent
+      border-radius: 0
+      &:hover
+        color: $primary-color
+        border-bottom-color: $primary-color
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a
+      &,
+      &:hover,
+      &:focus
+        color: $primary-color
+        border-bottom: 2px solid $primary-color
+        background-color: transparent
+        border-bottom-color: $primary-color
+
+// Navbars
+.navbar
+  border: 0
+
+// Input groups // Button input groups
+.navbar-collapse
+  .input-group-btn
+    > .btn
+      padding: 11px 15px
+
+// Forms
+legend
+  padding-bottom: 10px
+
+input[type="checkbox"]
+  margin: 3px 0 0
+
+.form-control
+  padding: 8px 12px
+  font-weight: 400
+  line-height: 1.44
+  border: 2px solid $input-border
+  @include transition(border-color ease-in-out .15s)
+  height: initial;
+
+
+// [converter] extracted from `.form-inline` for libsass compatibility
+@mixin form-inline
+
+  // Kick in the inline
+  @media (min-width: $screen-sm-min)
+    // Inline-block all the things for "inline"
+    .form-group
+      display: inline-block
+      margin-bottom: 0
+      vertical-align: middle
+
+
+    .btn
+      @include button-size(10px, $padding-base-horizontal, 13px, $line-height-base, $btn-border-radius-base)
+
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control
+      display: inline-block
+      width: auto // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle
+
+    // Make static controls behave like regular ones
+    .form-control-static
+      display: inline-block
+
+    .input-group
+      display: inline-table
+      vertical-align: middle
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control
+        width: auto
+
+    // Input groups need that 100% width though
+    .input-group > .form-control
+      width: 100%
+
+    .control-label
+      margin-bottom: 0
+      vertical-align: middle
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .radio,
+    .checkbox
+      display: inline-block
+      margin-top: 0
+      margin-bottom: 0
+      vertical-align: middle
+      label
+        padding-left: 0
+
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"]
+      position: relative
+      margin-left: 0
+
+    // Re-override the feedback icon.
+    .has-feedback
+      &.btn-flat
+        border-radius: 0
+      &.disabled,
+      &[disabled],
+      fieldset[disabled] &
+        cursor: $cursor-disabled
+        pointer-events: none
+      .form-control-feedback
+        top: 0
+
+// Buttons
+.btn
+  background-image: none
+  // border: 0
+  letter-spacing: 1px
+  text-transform: uppercase
+  @include button-size(8px, $padding-base-horizontal, 13px, $line-height-base, $btn-border-radius-base)
+  @include user-select(none)
+  transition: box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1), transform 0.2s cubic-bezier(0.35, 0, 0.25, 1), background-color 0.3s ease-in-out
+  &:hover,
+  &:focus,
+  &.focus
+    color: $btn-default-color
+    text-decoration: none
+    transform: translate3d(0, -1px, 0)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4)
+    outline: none
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &
+    cursor: $cursor-disabled
+    pointer-events: none
+    @include opacity(.65)
+    @include box-shadow(none)
+  &.icon-btn
+    i
+      margin-right: 5px
+  &.btn-flat
+    border-radius: 0
+
+.btn-xs
+  @include button-size(5px, 5px, $font-size-small, $line-height-small, $btn-border-radius-small)
+
+.btn-default
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border)

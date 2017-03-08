@@ -1,4 +1,4 @@
-aside.main-sidebar.hidden-print
+aside.main-sidebar
 
   section.sidebar
 
@@ -10,13 +10,9 @@ aside.main-sidebar.hidden-print
         a(href='#', data-toggle='modal', data-target='#newProjectName')
           span 新增專案
           i.fa.fa-plus
-      //- li
-      //-   a(href='#')
-      //-     span 專案列表
-      //-     i.fa.fa-angle-right
       li.treeview
         a(href='#')
-          i.fa.fa-laptop
+          i.fa.fa-list
           span 專案列表
           i.fa.fa-angle-right
         ul.treeview-menu
@@ -30,6 +26,7 @@ aside.main-sidebar.hidden-print
               |  List 2
       li
         a(href='my-data__project-admin')
+          i.fa.fa-wrench
           span 專案管理
           i.fa.fa-angle-right
 div(id='newProjectName',class='modal fade', abindex="-1")

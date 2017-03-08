@@ -1,0 +1,128 @@
+//
+// Application Variables
+//
+$body-font: 'Lato','Segoe UI',sans-serif !default
+$alt-font: "PT Sans","Hind","Segoe UI",sans-serif !default
+$font-size-base: 14px !default
+
+//
+// Skin Colors
+//
+
+$white: #FFF !default
+
+// ***** Sample Primary Colors *****
+//
+// Blue  : #2196F3
+// Teal  : #009688
+// Green : #4CAF50
+// Brown : #795548
+// Purple: #673AB7
+//
+
+$primary-color: #673AB7 !default
+$complementry-color: adjust_hue($primary-color, 180) !default
+$brand-primary: $primary-color !default
+
+// ***** Sample Sidebar Colors *****
+//
+// dark  : #222d32
+// light : #f8f8f8
+//
+
+$sidebar-color: #222d32 !default
+$sidebar-accent: dark !default
+
+$sidebar-dark-color: #fff !default
+$sidebar-dark-link-color: #fff !default
+
+$sidebar-light-color: #000 !default
+$sidebar-light-link-color: #555 !default
+
+$link-hover-decoration: inherit !default
+$input-border-focus: $primary-color !default
+
+// Progress bars
+$line-height-computed: 10px !default
+
+// Popovers
+$border-radius-large: 3px !default
+
+// Breadcrumb
+$breadcrumb-bg: transparent !default
+
+// Button
+$btn-default-border: #ccc !default
+
+// [converter] extracted from `.form-inline` for libsass compatibility
+@mixin form-inline
+
+  // Kick in the inline
+  @media (min-width: $screen-sm-min)
+    // Inline-block all the things for "inline"
+    .form-group
+      display: inline-block
+      margin-bottom: 0
+      vertical-align: middle
+
+
+    .btn
+      @include button-size(10px, $padding-base-horizontal, 13px, $line-height-base, $btn-border-radius-base)
+
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control
+      display: inline-block
+      width: auto // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle
+
+    // Make static controls behave like regular ones
+    .form-control-static
+      display: inline-block
+
+    .input-group
+      display: inline-table
+      vertical-align: middle
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control
+        width: auto
+
+    // Input groups need that 100% width though
+    .input-group > .form-control
+      width: 100%
+
+    .control-label
+      margin-bottom: 0
+      vertical-align: middle
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .radio,
+    .checkbox
+      display: inline-block
+      margin-top: 0
+      margin-bottom: 0
+      vertical-align: middle
+      label
+        padding-left: 0
+
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"]
+      position: relative
+      margin-left: 0
+
+    // Re-override the feedback icon.
+    .has-feedback
+      &.btn-flat
+        border-radius: 0
+      &.disabled,
+      &[disabled],
+      fieldset[disabled] &
+        cursor: $cursor-disabled
+        pointer-events: none
+      .form-control-feedback
+        top: 0
+
+

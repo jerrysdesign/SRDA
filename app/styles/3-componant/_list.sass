@@ -1,0 +1,33 @@
+.list-side-by-side
+  dl
+    border: 1px solid #ddd
+    background-color: #f7f7f7
+  dt
+    box-sizing: border-box
+    padding: 10px 5px
+  dd
+    box-sizing: border-box
+    padding: 10px 5px
+    ~
+      dt,
+      dd
+        border-top: 1px solid #ddd
+  dt
+    float: left
+    width: 9em
+    padding-bottom: 0
+    // clear: both
+
+
+  dd
+    // float: left
+    // clear: both
+    margin-left: 9em
+    border-left: 1px solid #ddd
+    background-color: #fff
+  dd:after
+    content: ""
+    display: block
+    clear: both
+// .row2 + dd:after
+//   content: none
