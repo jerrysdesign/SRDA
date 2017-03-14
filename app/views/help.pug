@@ -1,0 +1,42 @@
+extends layouts/_search
+
+block content
+  .page-title
+    div
+      h1 FAQ
+
+    div
+      ul.breadcrumb
+        li
+          i.fa.fa-home.fa-lg
+        li
+          a(href='#') 首頁
+        li FAQ
+
+  .row.page-help
+    .col-md-12
+      #accordion.panel-group(role='tablist', aria-multiselectable='true')
+        .panel.panel-default
+          #headingOne.panel-heading(role='tab')
+            h4.panel-title
+              a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                | Item #1
+          #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+            .panel-body
+              | lorem
+        .panel.panel-default
+          #headingTwo.panel-heading(role='tab')
+            h4.panel-title
+              a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                | Item #2
+          #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+            .panel-body
+              | lorem
+        .panel.panel-default
+          #headingThree.panel-heading(role='tab')
+            h4.panel-title
+              a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                | Item #3
+          #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+            .panel-body
+              | lorem
